@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Graph</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .cloud {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            background-color: #f0f8ff;
+            padding: 1.5%; /* Μικρότερο padding */
+            border-radius: 30px;
+            border: 2px solid #ccc;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+            font-family: Arial, sans-serif;
+            width: 25%; /* Μικρότερο πλάτος */
+            max-width: 340px; /* Περιορισμός στο μέγιστο πλάτος */
+        }
+    
+        .cloud p {
+            margin: 0;
+            font-size: 0.9em; /* Ελαφρώς μικρότερη γραμματοσειρά */
+        }
+    
+        /* Media Query για μικρότερες οθόνες */
+        @media (max-width: 600px) {
+            .cloud {
+                width: 45%; /* Ακόμα μικρότερο πλάτος για μικρότερες οθόνες */
+                padding: 1%;
+            }
+    
+            .cloud p {
+                font-size: 0.85em; /* Μικρότερη γραμματοσειρά */
+            }
+        }
+    </style>
+    
+</head>
+<body>
+
+    <h1>Graph simulator</h1>
+
+    <label for="graph">Enter the function</label> 
+    <br>
+
+    <form class="exisosi">
+       <input type="text" class="arithmoi" placeholder="Function">
+         <button type="submit">Submit</button>
+    </form>
+
+    <div class="cloud">
+        <p>This is what you can use:
+            <ol>
+                <li>+-ax^n(when the +,-,a is not nessesery)</li>
+            </ol>
+        </p>
+    </div>
+
+</body>
+</html>
